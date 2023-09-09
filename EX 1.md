@@ -22,55 +22,39 @@ RENAME: This is used to rename an object existing in the database.
 ### 1) Create a table student with the following fieds rollno,name,age,address,phoneno.
 
 ### SQL QUERY: 
-```python
-CREATE TABLE students(rollno INT,name VARCHAR(100),age INT,address VARCHAR(100),phoneno VARCHAR(15));
-```
-![image](https://github.com/JEGADEESH07/I2_DBMS/assets/113497131/d12b30b6-4cc4-4696-98df-0fa16fdddd0e)
-
+create table student(rollno numeric(10),name char(10),age numeric(5),address varchar(25),phoneno numeric(15));
 
 ### OUTPUT:
+![1](https://github.com/Divya110205/I2_DBMS/assets/119404855/960e66b8-fd34-420c-ac25-840488ccc6ea)
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
-```python
-INSERT INTO students(rollno, name, age, address, phoneno) VALUES (1, 'John', 20, 'CHENNAI', '9153657854');
-INSERT INTO students(rollno, name, age, address, phoneno) VALUES (2, 'SMITH', 25, 'TRICHY', '9746441548');
-```
+alter table student add department varchar(15);
+
 ### OUTPUT:
-![image](https://github.com/JEGADEESH07/I2_DBMS/assets/113497131/03e8c0e3-d1cc-4b9c-adc1-285ee4eacc58)
-
-
+![2](https://github.com/Divya110205/I2_DBMS/assets/119404855/6b9b4233-8203-4217-bf24-2d2495386908)
 
 ### 3) Drop the student table
  
 ### SQL QUERY: 
-```python
-DROP TABLE mystudent;
-```
+drop table student;
 
 ### OUTPUT:
-![image](https://github.com/JEGADEESH07/I2_DBMS/assets/113497131/90708111-dffb-48cb-b10b-aa78c3533aa3)
-
+![3](https://github.com/Divya110205/I2_DBMS/assets/119404855/e9ec15a1-9208-4344-bd40-56f9b5f52a29)
 
 ### 4) Delete the student table using truncate keyword
 
 ### SQL QUERY: 
-```python
-TRUNCATE TABLE mystudent;
-```
+truncate table student;
 
 ### OUTPUT:
-![image](https://github.com/JEGADEESH07/I2_DBMS/assets/113497131/226898db-fcba-41b1-9904-3606e5cc804f)
-
-
+![4](https://github.com/Divya110205/I2_DBMS/assets/119404855/1e31eef1-d37f-4bc1-b5c2-0d05bef01c0b)
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
-```python
-ALTER TABLE students RENAME TO mystudent;
-```
+rename table student to mystudent;
 
 ### OUTPUT:
-![image](https://github.com/JEGADEESH07/I2_DBMS/assets/113497131/5fb20f8b-87f8-434a-9d05-36c03abec3ce)
+![5](https://github.com/Divya110205/I2_DBMS/assets/119404855/fc4ff924-619e-4531-ac59-4a9f9048f8b0)
